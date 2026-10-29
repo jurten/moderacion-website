@@ -1,0 +1,656 @@
+﻿:root {
+  font-family:Segoe UI,Arial,sans-serif;
+  color:#202b3c;
+  background:#f5f6f8;
+  font-synthesis:none;
+  line-height:1.5;
+  --brand:#16644d}
+* {
+  box-sizing:border-box}
+body {
+  margin:0}
+button,input,select {
+  font:inherit}
+a {
+  color:inherit}
+button,a,input,select,summary {
+  touch-action:manipulation}
+:is(button,a,input,select,summary):focus-visible {
+  outline:3px solid #e49b13;
+  outline-offset:4px}
+button {
+  cursor:pointer}
+button:disabled {
+  cursor:default;
+  opacity:.5}
+[hidden] {
+  display:none!important}
+h1,h2,h3,p {
+  margin-top:0}
+h1,h2,h3 {
+  line-height:1.18}
+h1 {
+  font-size:clamp(2rem,4vw,3rem);
+  letter-spacing:-.025em}
+h2 {
+  font-size:1.5rem}
+h3 {
+  font-size:1.15rem}
+p {
+  max-width:70ch}
+small,.muted {
+  color:#626b76}
+button,.button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  border:1px solid #cbd1d9;
+  border-radius:6px;
+  padding:11px 19px;
+  background:white;
+  text-decoration:none;
+  font-weight:600;
+  line-height:1.4}
+button:hover,.button:hover {
+  filter:brightness(.95)}
+.primary {
+  background:var(--brand);
+  color:white;
+  border-color:var(--brand)}
+.dark {
+  background:#202b3c;
+  color:white;
+  border-color:#202b3c}
+.danger {
+  background:#ba3135;
+  color:white;
+  border-color:#ba3135}
+.link-button {
+  padding:0;
+  background:none;
+  border:0;
+  border-radius:0;
+  font-weight:400;
+  text-decoration:underline;
+  color:inherit}
+.subtle-link {
+  font-size:14px;
+  color:#657078}
+.home {
+  background:#f7f8fa}
+.home-header {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center;
+  max-width:1200px;
+  margin:auto;
+  padding:28px 40px;
+  border-bottom:1px solid #d7dce3}
+.wordmark {
+  font-size:19px;
+  font-weight:750;
+  text-decoration:none}
+.home-header>span {
+  font-size:14px;
+  color:#667080}
+.home-main {
+  max-width:1200px;
+  margin:auto;
+  padding:64px 40px 24px}
+.home h1 {
+  font-size:clamp(3rem,6vw,5.4rem);
+  line-height:1.04;
+  max-width:850px;
+  letter-spacing:-.04em;
+  margin-bottom:26px}
+.intro {
+  font-size:20px;
+  max-width:720px;
+  color:#586273}
+.lesson-note {
+  display:grid;
+  grid-template-columns:140px 1fr auto;
+  gap:24px;
+  align-items:center;
+  background:#e5efac;
+  padding:26px;
+  margin:44px 0 36px;
+  border-radius:8px}
+.lesson-note p {
+  margin:0}
+.lesson-note .button {
+  max-width:250px}
+.case-list article {
+  display:flex;
+  align-items:center;
+  gap:28px;
+  padding:30px 0;
+  border-bottom:1px solid #d7dce3}
+.case-list article>div {
+  flex:1}
+.case-number {
+  align-self:flex-start;
+  font-size:19px;
+  color:#657078;
+  padding-top:4px}
+.case-topic {
+  font-size:14px;
+  color:#596677;
+  margin-bottom:8px}
+.case-list h2 {
+  font-size:27px;
+  margin-bottom:8px}
+.case-list p:last-child {
+  margin:0;
+  color:#596677}
+footer {
+  font-size:14px;
+  color:#626b76;
+  padding:30px 0}
+footer span {
+  display:block;
+  margin-top:6px}
+.demo-banner {
+  padding:8px 24px;
+  background:#202b3c;
+  color:#f5f6f8;
+  text-align:center;
+  font-size:13px}
+.site-header {
+  background:white;
+  border-bottom:1px solid #dce1e6}
+.header-inner {
+  max-width:1120px;
+  padding:25px 32px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px}
+.brand {
+  font-size:26px;
+  font-weight:750;
+  color:var(--brand);
+  text-decoration:none;
+  letter-spacing:-.03em}
+.header-inner nav {
+  display:flex;
+  gap:24px;
+  align-items:center;
+  font-size:15px}
+.page {
+  max-width:1120px;
+  margin:0 auto;
+  padding:44px 32px 32px}
+.page>p {
+  color:#626b76}
+.shop-heading {
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:20px;
+  margin-bottom:30px}
+.shop-heading h1 {
+  margin-bottom:10px}
+.shop-heading p {
+  margin:0;
+  color:#626b76}
+.products {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px}
+.product {
+  background:white;
+  border:1px solid #d9dfe4;
+  border-radius:8px;
+  overflow:hidden}
+.product-art {
+  height:170px;
+  display:grid;
+  place-items:center;
+  background:#e9eee9}
+.notebook {
+  width:90px;
+  height:121px;
+  border-radius:2px 7px 7px 2px;
+  background:#ad623e;
+  border-left:10px solid #7d432a;
+  transform:rotate(-9deg);
+  box-shadow:8px 10px 15px #22382c1a}
+.product:nth-child(2) .product-art {
+  background:#e9ecf2}
+.pen {
+  width:12px;
+  height:129px;
+  background:#272c34;
+  transform:rotate(32deg);
+  border-radius:5px 5px 2px 2px;
+  border-top:24px solid #606975;
+  border-bottom:12px solid #acb3bb}
+.product:nth-child(3) .product-art {
+  background:#f2ede5}
+.folder {
+  width:132px;
+  height:95px;
+  background:#d4b35f;
+  border-radius:3px;
+  transform:rotate(-8deg);
+  border-top:12px solid #b99a4e}
+.product-content {
+  padding:24px}
+.product-content h2 {
+  font-size:20px;
+  margin-bottom:8px}
+.product-content p {
+  font-size:15px;
+  color:#626b76}
+.price {
+  font-size:24px;
+  font-weight:650;
+  margin:24px 0 18px}
+.product-content button {
+  width:100%}
+.panel {
+  background:white;
+  border:1px solid #d9dfe4;
+  padding:30px;
+  border-radius:8px}
+.cart {
+  margin-top:32px}
+.cart h2 {
+  margin-bottom:24px}
+.cart-empty {
+  color:#626b76}
+.cart-line {
+  display:grid;
+  grid-template-columns:1fr auto auto;
+  align-items:center;
+  gap:28px;
+  padding:16px 0;
+  border-bottom:1px solid #e1e5e9}
+.quantity {
+  display:flex;
+  align-items:center;
+  gap:12px}
+.quantity button {
+  padding:3px 12px;
+  min-width:36px}
+.total-row {
+  display:flex;
+  justify-content:space-between;
+  font-size:22px;
+  font-weight:650;
+  padding-top:25px}
+.cart-actions {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  margin-top:28px}
+.checkout {
+  margin-top:30px;
+  max-width:720px}
+.form-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px}
+.field {
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-bottom:20px}
+.field input {
+  width:100%;
+  min-height:48px;
+  border:1px solid #a7afb9;
+  border-radius:4px;
+  padding:10px 12px;
+  background:white;
+  color:#202b3c}
+.field input::placeholder {
+  color:#75808b}
+.wide {
+  grid-column:1/-1}
+.error {
+  color:#a4242b;
+  background:#fff0f0;
+  padding:13px 16px;
+  border-radius:4px;
+  margin:0 0 20px}
+.notice {
+  background:#eff3f8;
+  padding:16px;
+  color:#465367}
+.success {
+  padding:36px;
+  background:white;
+  border:1px solid #d9dfe4;
+  border-radius:8px;
+  margin-top:30px}
+.success h2 {
+  color:#16644d;
+  font-size:29px}
+.demo-footer {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  max-width:1120px;
+  margin:auto;
+  padding:28px 32px 40px;
+  font-size:13px;
+  color:#626b76}
+.demo-footer button {
+  font-size:13px}
+.portal {
+  --brand:#2b55a1;
+  background:#eef2f7}
+.portal-layout {
+  display:grid;
+  grid-template-columns:1fr 440px;
+  align-items:start;
+  gap:80px;
+  padding-top:60px;
+  padding-bottom:60px}
+.portal-copy {
+  padding-top:30px}
+.portal-copy h1 {
+  font-size:44px;
+  max-width:430px}
+.portal-copy p {
+  font-size:18px;
+  color:#596677}
+.portal-copy .course {
+  padding:25px 0;
+  margin-top:40px;
+  border-top:1px solid #c9d3e1}
+.course p {
+  font-size:15px;
+  margin:8px 0 0}
+.portal .panel h2 {
+  font-size:27px}
+.login-actions {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  margin-top:28px}
+.recovery {
+  border-top:1px solid #d9dfe4;
+  margin-top:28px;
+  padding-top:24px}
+.account-panel {
+  max-width:760px}
+.receipt {
+  border-top:1px solid #d9dfe4;
+  padding-top:22px;
+  margin-top:25px}
+.receipt dl,.booking dl {
+  display:grid;
+  grid-template-columns:130px 1fr;
+  gap:10px;
+  margin:0 0 25px}
+.receipt dt,.booking dt {
+  color:#626b76}
+.receipt dd,.booking dd {
+  margin:0;
+  font-weight:600}
+.workspace {
+  --brand:#6b4688;
+  background:#f5f3f7}
+.booking-list {
+  display:grid;
+  gap:20px;
+  margin-top:30px}
+.booking {
+  background:white;
+  border:1px solid #d9dfe4;
+  border-radius:8px;
+  padding:30px;
+  display:grid;
+  grid-template-columns:1fr 1fr auto;
+  gap:25px;
+  align-items:start}
+.booking h2 {
+  margin-bottom:10px}
+.booking p {
+  color:#626b76;
+  margin-bottom:0}
+.booking dl {
+  font-size:15px;
+  grid-template-columns:80px 1fr;
+  margin:0}
+.status {
+  display:inline-block;
+  background:#e8f2eb;
+  color:#2c6844;
+  border-radius:4px;
+  padding:5px 10px;
+  font-size:14px;
+  white-space:nowrap}
+.booking details {
+  grid-column:1/-1;
+  border-top:1px solid #e2e0e5;
+  padding-top:18px}
+.booking summary {
+  cursor:pointer;
+  color:#6b6175;
+  font-size:14px}
+.billing-content {
+  padding-top:22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px}
+.billing-content p {
+  margin:0}
+.booking-feedback {
+  font-size:14px;
+  margin:15px 0 0}
+.modal {
+  border:1px solid #cbd1d9;
+  border-radius:10px;
+  padding:32px;
+  width:min(480px,calc(100% - 32px));
+  color:#202b3c;
+  box-shadow:0 20px 70px #17233730}
+.modal::backdrop {
+  background:#19233380}
+.modal h2 {
+  font-size:27px}
+.modal p {
+  color:#596677}
+.modal-actions {
+  display:flex;
+  justify-content:flex-end;
+  gap:12px;
+  margin-top:30px}
+.guide {
+  background:white}
+.guide-main {
+  max-width:950px;
+  margin:auto;
+  padding:48px 32px}
+.guide h1 {
+  max-width:750px}
+.guide .lead {
+  font-size:20px;
+  color:#596677}
+.guide-section {
+  border-top:1px solid #d7dce3;
+  margin-top:38px;
+  padding-top:30px}
+.guide-context {
+  background:#eef2f7;
+  padding:25px;
+  margin:22px 0;
+  border-radius:6px}
+.guide-context h3 {
+  margin-bottom:12px}
+.guide-context p:last-child {
+  margin-bottom:0}
+.guide li {
+  margin:10px 0}
+.guide code {
+  background:#eef2f7;
+  padding:2px 5px;
+  overflow-wrap:anywhere}
+.guide table {
+  border-collapse:collapse;
+  width:100%;
+  font-size:15px;
+  margin:20px 0}
+.guide th,.guide td {
+  text-align:left;
+  vertical-align:top;
+  padding:12px;
+  border:1px solid #d7dce3}
+.guide th {
+  background:#f4f6f8}
+.table-scroll {
+  overflow-x:auto}
+.print-actions {
+  display:flex;
+  gap:16px;
+  align-items:center;
+  flex-wrap:wrap}
+.context-only .teacher-only {
+  display:none!important}
+@media(min-width:1300px) {
+  .page {
+  padding-top:58px}
+}
+@media(max-width:850px) {
+  .lesson-note {
+  grid-template-columns:1fr;
+  gap:12px}
+.lesson-note .button {
+  max-width:none;
+  justify-self:start}
+.portal-layout {
+  gap:32px;
+  grid-template-columns:1fr 1fr}
+.booking {
+  grid-template-columns:1fr auto}
+.booking dl {
+  grid-column:1/-1;
+  grid-row:2}
+.booking details {
+  grid-row:3}
+}
+@media(max-width:600px) {
+  .home-header {
+  padding:22px}
+.home-header>span {
+  display:none}
+.home-main {
+  padding:38px 22px}
+.case-list article {
+  flex-wrap:wrap;
+  gap:16px}
+.case-list article>div {
+  flex-basis:calc(100% - 50px)}
+.case-list article>.button {
+  margin-left:38px}
+.case-list h2 {
+  font-size:23px}
+.header-inner,.page {
+  padding-left:20px;
+  padding-right:20px}
+.header-inner {
+  align-items:start}
+.header-inner nav {
+  gap:12px;
+  font-size:14px}
+.brand {
+  font-size:23px}
+.products {
+  grid-template-columns:1fr}
+.product {
+  display:grid;
+  grid-template-columns:100px 1fr}
+.product-art {
+  height:100%;
+  min-height:220px}
+.notebook {
+  width:52px;
+  height:80px;
+  border-left-width:6px}
+.pen {
+  height:100px}
+.folder {
+  width:70px;
+  height:56px}
+.product-content {
+  padding:20px}
+.product-content .price {
+  margin:12px 0}
+.panel {
+  padding:22px}
+.cart-line {
+  grid-template-columns:1fr auto;
+  gap:12px}
+.cart-line>strong {
+  grid-column:2}
+.form-grid {
+  grid-template-columns:1fr;
+  gap:0}
+.portal-layout {
+  grid-template-columns:1fr;
+  padding-top:28px}
+.portal-copy {
+  padding-top:0}
+.portal-copy h1 {
+  font-size:34px}
+.portal-copy .course {
+  display:none}
+.booking {
+  padding:22px;
+  gap:20px}
+.billing-content {
+  align-items:start;
+  flex-direction:column}
+.demo-footer {
+  padding:24px 20px}
+.guide-main {
+  padding:30px 20px}
+.shop-heading {
+  align-items:start;
+  flex-direction:column}
+.modal {
+  padding:25px}
+.login-actions {
+  align-items:start;
+  flex-direction:column}
+}
+@media print {
+  body.guide {
+  background:white;
+  font-size:11pt}
+.home-header,.print-actions,.guide-back,.guide a.open-case {
+  display:none}
+.guide-main {
+  max-width:none;
+  padding:0}
+.guide-section {
+  break-before:page;
+  border:0;
+  padding-top:0}
+.guide-context {
+  background:#f3f3f3;
+  break-inside:avoid}
+.guide table {
+  font-size:10pt}
+.guide tr {
+  break-inside:avoid}
+.guide h1 {
+  font-size:27pt}
+.guide h2 {
+  font-size:20pt}
+a {
+  text-decoration:none}
+}
+
+
